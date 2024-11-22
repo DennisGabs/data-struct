@@ -12,9 +12,17 @@ public class TesteLivro {
 
         Livraria livraria = new Livraria(livros.length);
 
-        for (int i = 0; i < livraria.size; i++){
-          livraria.adicionar(livros[i]);
-        }
+
+        livraria.adicionarTodos(livros);
+
+        System.out.println(livraria);
+
+        livraria.removerDoInicio();
+
+        System.out.println(livraria);
+
+        livraria.removerNoFinal();
+
         System.out.println(livraria);
 
 

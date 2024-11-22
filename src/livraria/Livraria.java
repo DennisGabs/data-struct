@@ -22,6 +22,12 @@ public class Livraria {
         size++;
     }
 
+    public void adicionarTodos(Livro[] livros){
+        for (int i = 0; i < livros.length; i++) {
+            adicionar(livros[i]);
+        }
+    }
+
     public boolean isEmpty(){
         return size == 0;
     }
@@ -73,7 +79,7 @@ public class Livraria {
     public String toString() {
         String str = "[";
         for (int i = 0; i < size; i++ ){
-            str += livros[i];
+            str += livros[i] + ",";
         }
         str += ']';
         return str;
