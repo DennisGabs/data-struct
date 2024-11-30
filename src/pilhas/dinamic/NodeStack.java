@@ -1,4 +1,6 @@
-package pilhas;
+package pilhas.dinamic;
+
+import pilhas.IStack;
 
 public class NodeStack implements IStack {
     Node top;

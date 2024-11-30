@@ -1,4 +1,4 @@
-package pilhas;
+package pilhas.dinamic;
 
 public class Node {
     String element;
